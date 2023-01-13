@@ -1,9 +1,0 @@
-kubectl create namespace db
-
-helm install mysql mybitnami/mysql --set="auth.rootPassword=pass@123" --namespace=db
-
-helm status mysql --namespace db
-
-kubectl get all -n db
-
-
