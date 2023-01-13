@@ -1,3 +1,12 @@
-Task(s):
- 1. Add a helm repository in local with name mybitnami pointing to URL https://charts.bitnami.com/bitnami
- 2. Search for the mysql helm chart using the above added mybitnami helm repo and check the versions available
+#### Task(s):
+
+1. Add a helm repository in local with name mybitnami pointing to URL https://charts.bitnami.com/bitnami
+##### Solution:
+```
+helm repo add mybitnami https://charts.bitnami.com/bitnami
+```
+2. Search for the mysql helm chart using the above added mybitnami helm repo and check the versions available
+##### Solution:
+```
+helm search repo mybitnami/mysql
+```
