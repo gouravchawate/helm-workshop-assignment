@@ -1,0 +1,3 @@
+helm repo add mybitnami https://charts.bitnami.com/bitnami
+
+helm search repo mybitnami/mysql
