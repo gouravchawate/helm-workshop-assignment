@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: post-delete-job
+  annotations:
+    "helm.sh/hook": post-delete
+spec:
+  template:
+    spec:
+      containers:
+      - name: post-delete-job
+        image: alpine
+        command: ["echo",  "I am done with cleanup!"]
+      restartPolicy: Never
+ 

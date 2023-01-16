@@ -71,11 +71,11 @@ containers:
 3. Generate the templates using helm template <path to the sample helm chart> and verify that the changes which you made above are visible
 ##### Solution: 
 ```
-helm template mychart
+helm template myrelease mychart
 
 ```
 4. Install this helm chart and verify deployment has configmap mounted as needed# Helm Workshop Tasks and Assignment
 ##### Solution:
 ```
-helm install webapp mychart -n webnamespace
+helm install myrelease mychart --namespace mynamespace --create-namespace
 ```
